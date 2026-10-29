@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Sign up – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="screen">
+  <header class="topbar"><a class="logo" href="index.html">MediSync</a></header>
+    <form class="auth-card" action="account-setup.html">
+      <a href="index.html" class="home-link">← Back to home</a>
+      <h2>Welcome</h2>
+      <label for="su-id">Email/ Phone Number</label>
+      <input id="su-id" name="id" type="text" autocomplete="username" required />
+
+      <label for="su-pw">Password</label>
+      <input id="su-pw" name="password" type="password" autocomplete="new-password" minlength="6" required />
+
+      <label for="su-pw2">Confirm Password</label>
+      <input id="su-pw2" name="confirm" type="password" autocomplete="new-password" minlength="6" required />
+
+      <label class="terms">
+        <input type="checkbox" id="su-terms" required /> Agree with <a href="signup.html">Terms and Services</a>
+      </label>
+      <button class="btn primary" type="submit">Sign Up</button>
+      <p class="switch-link">Already have an account? <a href="login.html">Log in</a></p>
+    </form>
+  </section>
+</body>
+</html>

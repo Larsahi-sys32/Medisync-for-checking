@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Dashboard – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar app-top">
+    <a class="logo" href="dashboard.html">MediSync</a>
+    <div class="top-icons">
+      <a class="icon-btn" href="settings-personal.html" title="Settings" aria-label="Settings">⚙</a>
+      <a class="icon-btn" href="settings-notifications.html" title="Notifications" aria-label="Notifications">🔔</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main">
+        <a href="dashboard.html" class="active" aria-current="page">Dashboard</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="medications.html">Medications</a>
+        <a href="plan.html">Plan</a>
+        <a href="settings-personal.html">Profile</a>
+      <div class="sidebar-foot"><strong>Coral Parento</strong><span class="muted">Patient</span></div>
+    </nav>
+
+    <main class="content">
+      <section class="view">
+        <div class="dash-top">
+          <h2>Hello, Coral</h2>
+          <div class="clock"><div>23.10.2026</div><small>Today</small></div>
+        </div>
+
+        <div class="carousel" tabindex="0" aria-label="Today's medications (scroll sideways)">
+          <div class="med-card">
+            <div class="med-card-head"><strong>Your next medication</strong><span>🕒 02:00 PM</span></div>
+            <div class="med-row">
+              <div>
+                <div class="med-name">Lagundi XForte</div>
+                <span class="chip">Not Taken</span>
+                <a class="chip link" href="medications.html">View Notes</a>
+              </div>
+              <div class="qty">x2</div>
+            </div>
+            <a class="btn primary small" href="calendar.html">Quick Mark as Taken</a>
+          </div>
+          <div class="med-card">
+            <div class="med-card-head"><strong>Later today</strong><span>🕒 08:00 PM</span></div>
+            <div class="med-row">
+              <div>
+                <div class="med-name">Lagundi XForte</div>
+                <span class="chip">Not Taken</span>
+                <a class="chip link" href="medications.html">View Notes</a>
+              </div>
+              <div class="qty">x2</div>
+            </div>
+            <a class="btn primary small" href="calendar.html">Quick Mark as Taken</a>
+          </div>
+          <div class="med-card">
+            <div class="med-card-head"><strong>Taken earlier</strong><span>🕒 08:00 AM</span></div>
+            <div class="med-row">
+              <div>
+                <div class="med-name">Lagundi XForte</div>
+                <span class="chip done">Taken</span>
+                <a class="chip link" href="medications.html">View Notes</a>
+              </div>
+              <div class="qty">x2</div>
+            </div>
+            <a class="btn primary small" href="calendar.html">Undo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

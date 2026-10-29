@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Log in – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="screen">
+  <header class="topbar"><a class="logo" href="index.html">MediSync</a></header>
+    <form class="auth-card" action="dashboard.html">
+      <a href="index.html" class="home-link">← Back to home</a>
+      <h2>Welcome back</h2>
+      <label for="li-id">Email/ Phone Number</label>
+      <input id="li-id" name="id" type="text" autocomplete="username" required />
+
+      <label for="li-pw">Password</label>
+      <input id="li-pw" name="password" type="password" autocomplete="current-password" required />
+
+      <button class="btn primary" type="submit">Log In</button>
+      <p class="switch-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </form>
+  </section>
+</body>
+</html>

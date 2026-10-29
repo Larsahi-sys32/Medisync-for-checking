@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Notifications – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar app-top">
+    <a class="logo" href="dashboard.html">MediSync</a>
+    <div class="top-icons">
+      <a class="icon-btn" href="settings-personal.html" title="Settings" aria-label="Settings">⚙</a>
+      <a class="icon-btn" href="settings-notifications.html" title="Notifications" aria-label="Notifications">🔔</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="medications.html">Medications</a>
+        <a href="plan.html">Plan</a>
+        <a href="settings-personal.html" class="active" aria-current="page">Profile</a>
+      <div class="sidebar-foot"><strong>Coral Parento</strong><span class="muted">Patient</span></div>
+    </nav>
+
+    <main class="content">
+      <section class="view">
+        <div class="profilebar">
+          <div class="circle">👤</div>
+          <div><strong>Coral Parento</strong><br><small>coral@example.com</small></div>
+        </div>
+
+        <div class="settings">
+          <nav class="subnav" aria-label="Settings">
+            <a href="settings-personal.html">Personal information</a>
+            <a href="settings-notifications.html" class="active" aria-current="page">Notifications</a>
+            <a href="settings-privacy.html">Privacy &amp; security</a>
+            <a href="settings-accessibility.html">Accessibility</a>
+            <a href="settings-report-bug.html">Report a bug</a>
+          </nav>
+
+          <div class="panes">
+            <section class="pane">
+              <h2>Notifications</h2>
+              <div class="opt-card">
+              <label class="switch"><span><b>Medication reminders</b><br><span class="muted">Get an alert when a dose is due.</span></span><input type="checkbox" checked><span class="track"></span></label>
+              <label class="switch"><span><b>Missed dose alerts</b><br><span class="muted">Show a red dot on the bell when a dose is overdue.</span></span><input type="checkbox" checked><span class="track"></span></label>
+              <label class="switch"><span><b>Refill reminders</b><br><span class="muted">Know when a medication is running low.</span></span><input type="checkbox"><span class="track"></span></label>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

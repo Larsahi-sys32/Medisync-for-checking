@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Today's schedule – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar app-top">
+    <a class="logo" href="dashboard.html">MediSync</a>
+    <div class="top-icons">
+      <a class="icon-btn" href="settings-personal.html" title="Settings" aria-label="Settings">⚙</a>
+      <a class="icon-btn" href="settings-notifications.html" title="Notifications" aria-label="Notifications">🔔</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html" class="active" aria-current="page">Calendar</a>
+        <a href="medications.html">Medications</a>
+        <a href="plan.html">Plan</a>
+        <a href="settings-personal.html">Profile</a>
+      <div class="sidebar-foot"><strong>Coral Parento</strong><span class="muted">Patient</span></div>
+    </nav>
+
+    <main class="content">
+      <section class="view">
+        <div class="seg"><a href="calendar.html" class="active" aria-current="page">Today's Schedule</a><a href="calendar-monthly.html">Monthly Calendar</a></div>
+
+        <div class="tab">
+          <h3 style="text-align:center;font-weight:500">Friday, 23 October 2026</h3>
+          <ul class="list">
+            <li class="taken">
+              <div><strong>08:00 AM</strong> – Lagundi XForte <span class="meta">x2 · Taken ✓</span></div>
+              <div class="actions"><a class="mini" href="calendar.html">Undo</a></div>
+            </li>
+            <li>
+              <div><strong>02:00 PM</strong> – Lagundi XForte <span class="meta">x2 · Not taken</span></div>
+              <div class="actions"><a class="mini" href="calendar.html">Mark taken</a></div>
+            </li>
+            <li>
+              <div><strong>08:00 PM</strong> – Lagundi XForte <span class="meta">x2 · Not taken</span></div>
+              <div class="actions"><a class="mini" href="calendar.html">Mark taken</a></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Profile setup – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="screen wave">
+  <header class="topbar"><a class="logo" href="index.html">MediSync</a></header>
+    <form class="setup" action="dashboard.html">
+      <div class="setup-head"><h3>Profile Setup</h3><a href="account-setup-profile.html" class="back">Back</a></div>
+      <div class="setup-panel row">
+        <label class="photo">
+          <span class="circle">👤</span>
+          <small>Add Profile Picture</small>
+          <input name="photo" type="file" accept="image/*" hidden />
+        </label>
+        <div class="col">
+          <details class="acc-details">
+            <summary class="btn primary wide">Accessibility Preferences ⚙</summary>
+            <div class="acc-panel">
+              <label><input type="checkbox" name="large" /> Large text</label>
+              <label><input type="checkbox" name="contrast" /> High contrast</label>
+            </div>
+          </details>
+          <input class="pill-input" name="emergency" placeholder="Emergency Contact" aria-label="Emergency contact" />
+        </div>
+      </div>
+      <div class="btn-row">
+        <a class="btn light" href="dashboard.html">Skip</a>
+        <button class="btn primary" type="submit">Finish</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

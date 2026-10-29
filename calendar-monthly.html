@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Monthly calendar – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar app-top">
+    <a class="logo" href="dashboard.html">MediSync</a>
+    <div class="top-icons">
+      <a class="icon-btn" href="settings-personal.html" title="Settings" aria-label="Settings">⚙</a>
+      <a class="icon-btn" href="settings-notifications.html" title="Notifications" aria-label="Notifications">🔔</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html" class="active" aria-current="page">Calendar</a>
+        <a href="medications.html">Medications</a>
+        <a href="plan.html">Plan</a>
+        <a href="settings-personal.html">Profile</a>
+      <div class="sidebar-foot"><strong>Coral Parento</strong><span class="muted">Patient</span></div>
+    </nav>
+
+    <main class="content">
+      <section class="view">
+        <div class="seg"><a href="calendar.html">Today's Schedule</a><a href="calendar-monthly.html" class="active" aria-current="page">Monthly Calendar</a></div>
+
+        <div class="tab">
+          <div class="month-head"><strong>October 2026</strong></div>
+          <div class="grid dow"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+          <div class="grid days">
+            <span class="day blank"></span>
+            <span class="day blank"></span>
+            <span class="day blank"></span>
+            <span class="day blank"></span>
+            <a class="day" href="calendar.html">1<i class="ok"></i></a>
+            <a class="day" href="calendar.html">2<i class="ok"></i></a>
+            <a class="day" href="calendar.html">3<i class="ok"></i></a>
+            <a class="day" href="calendar.html">4<i class="ok"></i></a>
+            <a class="day" href="calendar.html">5<i class="ok"></i></a>
+            <a class="day" href="calendar.html">6<i class="miss"></i></a>
+            <a class="day" href="calendar.html">7<i class="ok"></i></a>
+            <a class="day" href="calendar.html">8<i class="ok"></i></a>
+            <a class="day" href="calendar.html">9<i class="part"></i></a>
+            <a class="day" href="calendar.html">10<i class="ok"></i></a>
+            <a class="day" href="calendar.html">11<i class="ok"></i></a>
+            <a class="day" href="calendar.html">12<i class="ok"></i></a>
+            <a class="day" href="calendar.html">13<i class="ok"></i></a>
+            <a class="day" href="calendar.html">14<i class="miss"></i></a>
+            <a class="day" href="calendar.html">15<i class="ok"></i></a>
+            <a class="day" href="calendar.html">16<i class="ok"></i></a>
+            <a class="day" href="calendar.html">17<i class="ok"></i></a>
+            <a class="day" href="calendar.html">18<i class="ok"></i></a>
+            <a class="day" href="calendar.html">19<i class="ok"></i></a>
+            <a class="day" href="calendar.html">20<i class="part"></i></a>
+            <a class="day" href="calendar.html">21<i class="part"></i></a>
+            <a class="day" href="calendar.html">22<i class="ok"></i></a>
+            <a class="day today sel" href="calendar.html" aria-current="date">23<i class="part"></i></a>
+            <a class="day" href="calendar.html">24</a>
+            <a class="day" href="calendar.html">25</a>
+            <a class="day" href="calendar.html">26</a>
+            <a class="day" href="calendar.html">27</a>
+            <a class="day" href="calendar.html">28</a>
+            <a class="day" href="calendar.html">29</a>
+            <a class="day" href="calendar.html">30</a>
+            <a class="day" href="calendar.html">31</a>
+          </div>
+          <small class="legend"><i class="lg ok"></i>All taken <i class="lg part"></i>Partial <i class="lg miss"></i>Missed</small>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

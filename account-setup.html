@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Account setup – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="screen wave">
+  <header class="topbar"><a class="logo" href="index.html">MediSync</a></header>
+    <form class="setup" action="account-setup-profile.html">
+      <h3>Account Setup</h3>
+      <div class="setup-panel">
+        <div class="role-options">
+          <input type="radio" name="role" id="role-patient" value="Patient" required />
+          <label class="role" for="role-patient"><span class="avatar-img"><img src="patient.png"></span><span>Patient</span></label>
+          <input type="radio" name="role" id="role-caregiver" value="Caregiver" />
+          <label class="role" for="role-caregiver"><span class="avatar-img"><img src="Caregiver.png" alt="Caregiver"></span><span>Caregiver</span></label>
+        </div>
+      </div>
+      <button class="btn primary center" type="submit">Confirm</button>
+    </form>
+  </section>
+</body>
+</html>

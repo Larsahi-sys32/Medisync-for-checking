@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Privacy & security – MediSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar app-top">
+    <a class="logo" href="dashboard.html">MediSync</a>
+    <div class="top-icons">
+      <a class="icon-btn" href="settings-personal.html" title="Settings" aria-label="Settings">⚙</a>
+      <a class="icon-btn" href="settings-notifications.html" title="Notifications" aria-label="Notifications">🔔</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="medications.html">Medications</a>
+        <a href="plan.html">Plan</a>
+        <a href="settings-personal.html" class="active" aria-current="page">Profile</a>
+      <div class="sidebar-foot"><strong>Coral Parento</strong><span class="muted">Patient</span></div>
+    </nav>
+
+    <main class="content">
+      <section class="view">
+        <div class="profilebar">
+          <div class="circle">👤</div>
+          <div><strong>Coral Parento</strong><br><small>coral@example.com</small></div>
+        </div>
+
+        <div class="settings">
+          <nav class="subnav" aria-label="Settings">
+            <a href="settings-personal.html">Personal information</a>
+            <a href="settings-notifications.html">Notifications</a>
+            <a href="settings-privacy.html" class="active" aria-current="page">Privacy &amp; security</a>
+            <a href="settings-accessibility.html">Accessibility</a>
+            <a href="settings-report-bug.html">Report a bug</a>
+          </nav>
+
+          <div class="panes">
+            <section class="pane">
+              <h2>Privacy &amp; security</h2>
+              <div class="opt-card">
+                <details class="opt-details">
+                  <summary class="opt-row"><div><b>Change password</b><br><span class="muted">Update the password you use to log in.</span></div><span class="btn light small">Change</span></summary>
+                  <form class="form" action="settings-privacy.html">
+                    <label>Current password<input name="current" type="password" autocomplete="current-password" required /></label>
+                    <label>New password<input name="new" type="password" autocomplete="new-password" minlength="6" required /></label>
+                    <label>Confirm new password<input name="confirm" type="password" autocomplete="new-password" minlength="6" required /></label>
+                    <div class="btn-row left"><button class="btn primary" type="submit">Update password</button></div>
+                  </form>
+                </details>
+                <div class="opt-row"><div><b>Caregiver connections</b><br><span class="muted">Choose who can see your medication plan.</span></div><a class="btn light small" href="settings-privacy.html">Manage</a></div>
+                <div class="opt-row"><div><b>Data sharing permissions</b><br><span class="muted">Control what information is shared.</span></div><a class="btn light small" href="settings-privacy.html">Manage</a></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
